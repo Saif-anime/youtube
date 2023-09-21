@@ -1,0 +1,308 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* left side here  */
+.left_side{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 55px 0px 0px;
+}
+#humbar_icon{
+    width: 27px;
+}
+#youtube_icon{
+    width: 100px;
+}
+
+/* middle side here  */
+.middle_side{
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    border-radius: 40px 0 0 40px;
+    padding: 0px 4px 0px 16px;
+    width: 600px;
+    border: 1px solid #8080802b;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+/* tooltip here  */
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    top: 120%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+.icons{   
+    background-color: #8080802b;
+    border: 1px solid #8080802b;
+    padding: 7px;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    height: 41px;
+    width: 64px;
+    margin: 0;
+
+}
+
+
+input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    width: 100%;
+    padding: 7px 7px;
+}
+
+
+.mic{
+    width: 48px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #80808016;
+    border: none;
+    margin-left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+/* right side  */
+
+.right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 155px;
+}
+
+
+.right_icon{
+    width: 40px;
+    height: 38px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+}
+.right_icon:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8080801a;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.right_icon_channal{
+    background: none;
+    border: none;
+}
+.channel_logo{
+    width: 35px;
+    border-radius: 50%;
+}
+
+
+
+/* sidebar here  */
+.main{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar{
+    padding: 10px 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 90vh;
+    cursor: pointer;
+    position: sticky;
+    top: 60px;
+
+}
+.side_icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #8080808c;
+}
+
+.sidebar hr{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.sidebar ul li{
+    display: flex;
+    padding: 5px 12px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+    line-height: 2;
+}
+
+.sidebar ul li:hover{
+    background-color: #80808024;
+}
+
+.side_icon{
+    margin-right: 17px;
+}
+
+.sidebar h5{
+    font-size: 18px;
+    font-family: cursive;
+    margin: 10px 0px;
+}
+.sidebar::-webkit-scrollbar{
+    width: 5px;
+}
+.sidebar::-webkit-scrollbar-track{
+    background-color: white;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+.sidebar:hover::-webkit-scrollbar-thumb{
+    background-color: #8080809d;
+    transition: all 1s ease;
+}
+
+.sidebar::-webkit-scrollbar-corner{
+    border-radius: 50%;
+}
+.footer{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+#bottom_foot{
+    color: rgba(128, 128, 128, 0.536);
+}
+
+/* left bar side here  */
+
+.leftbar{
+    padding: 0px 15px; 
+}
+.left_top{
+    padding: 16px 0px;
+    position: fixed;
+    top: 57px;
+    background: white;
+    width: 100%;
+    z-index: 1;
+}
+.left_top #all{
+    padding: 7px 14px;
+    font-size: 16px;
+    font-family: sans-serif;
+    border: none;
+    background: #000000b8;
+    color: white;
+    border-radius: 6px;
+}
+
+.left_top button{
+    padding: 7px 14px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0px 10px;
+    border: none;
+    background: #d9d8d8;
+    color: black;
+    border-radius: 6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.left_bottom{
+    padding: 70px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.content{
+    display: flex;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: 14px;
+    margin-top: 10px;
+    font-family:Arial, Helvetica, sans-serif
+}
+.card{
+    width: 21.1rem;
+    cursor: pointer;
+}
+.card img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.logo{
+    width: 74px;
+    height: 40px;
+    margin: 0px 10px;
+}
+.logo img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 50%;
+}
